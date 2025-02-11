@@ -61,4 +61,5 @@ Ternary Operators
 Ternary operator allows to write a condition. Another way to write conditionals is using ternary operators. Look at the following examples:
 
 
+slice() vs splice();
 
