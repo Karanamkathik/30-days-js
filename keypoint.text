@@ -1,0 +1,64 @@
+console.log('Hello', 'World', '!')
+console.log('HAPPY', 'NEW', 'YEAR', 2020)
+console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
+
+As you can see from the snippet code above, console.log() can take multiple arguments.
+
+console.log(3**2); // Output: 9
+
+Explanation:
+3**2 means 3 raised to the power of 2 
+This evaluates to 9.
+
+JavaScript can be added to a web page in three different ways:
+
+Inline script
+Internal script
+External script
+Multiple External scripts
+
+Undefined
+In JavaScript, if we don't assign a value to a variable, the value is undefined. In addition to that, if a function is not returning anything, it returns undefined.
+
+let firstName
+console.log(firstName) // undefined, because it is not assigned to a value yet
+
+1. Loose Equality (==)
+2. Strict Equality (===)
+
+Data types can be divided into two:
+
+Primitive data types
+Non-primitive data types(Object References)
+
+Non-primitive data types in JavaScript includes:
+
+Objects
+Arrays
+
+Non-primitive data types are modifiable or mutable. We can modify the value of non-primitive data types after it gets created.
+
+Primitives (numbers, strings, booleans) are compared by value.
+
+Objects (arrays, functions, objects) are compared by reference.
+
+Different objects are never equal (== or === returns false) even if they contain the same values.
+
+Template Literals (Template Strings)
+To create a template strings, we use two back-ticks. We can inject data as expressions inside a template string. To inject data, we enclose the expression with a curly bracket({}) preceded by a $ sign. See the syntax below.
+
+console.log('sum of a and b is')
+
+let a = 3
+let b = 4
+
+console.log(`sum of ${a} and ${b} is ${a+b}`)
+
+Casting: Converting one data type to another data type.
+We use parseInt(), parseFloat(), Number(), + sign, str() When we do arithmetic operations string numbers should be first converted to integer or float if not it returns an error.
+
+Ternary Operators
+Ternary operator allows to write a condition. Another way to write conditionals is using ternary operators. Look at the following examples:
+
+
+
