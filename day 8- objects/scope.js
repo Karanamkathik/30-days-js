@@ -71,3 +71,4 @@ function letsLearnScope() {
         2. var is function scope(npt to block scope , if we decelar in block then can access in out)
         3. let and const are block scope
   */
+ 
