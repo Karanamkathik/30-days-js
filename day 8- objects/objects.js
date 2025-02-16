@@ -47,3 +47,6 @@ console.log(copyPerson)
 
   const values1=Object.values(person.hobbies)
   console.log(values1)
+
+  const entries = Object.entries(copyPerson)
+console.log(entries)

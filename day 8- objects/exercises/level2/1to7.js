@@ -52,4 +52,5 @@ const users = {
 
 //1.Find the person who has many skills in the users object.
 
-let personWithMostSkills = Object.keys(users)
+
+console.log(users)
