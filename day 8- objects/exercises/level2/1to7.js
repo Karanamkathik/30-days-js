@@ -85,3 +85,28 @@ for(const [name,details] of person){
 
 console.log(skilluser+' with '+most+' skills.')
 
+//2.Count logged in users, count users having greater than equal to 50 points from the following object.
+ const q2=()=>{
+let loggedinusers=0
+let userswithpoints=0
+let userswithpoints50=0
+
+for(const user in users){
+  //for...in loops over the keys (usernames like "Alex", "Asab", etc.), not the user objects.
+     if(users[user].isLoggedIn == true){
+      loggedinusers++
+     }
+     if(users[user].points>=50){
+      userswithpoints50++
+     }
+}
+console.log('Logged in users: '+loggedinusers)
+console.log('Users with points: '+userswithpoints50)
+ }
+
+ q2()
+
+ 
+
+
+
