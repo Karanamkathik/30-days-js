@@ -1,6 +1,6 @@
-const personWithMostSkills = persons.reduce((max,[name,user])=>{
-//            user.skills.length>max.skills.length() ? {name,skills:user.skills} :max ,({name:'',skills:[]})
-// } 
-  
-// )
-// console.log(personWithMostSkills)
+for(const user of person){
+//   if(user.skills.length>most){
+//     most=user.skills.length
+//     skilluser=user
+//   }
+// }

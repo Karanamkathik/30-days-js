@@ -52,5 +52,36 @@ const users = {
 
 //1.Find the person who has many skills in the users object.
 
+let mostskill=0
+let mostskilluser=""
 
-console.log(users)
+for(const user in users){
+  if(users[user].skills.length>mostskill){
+    mostskill=users[user].skills.length
+    mostskilluser=user
+  }
+}
+console.log(mostskilluser+' '+mostskill)
+
+let person =Object.entries(users);
+
+//---> Object.entries(users) converts the users object into an array of key-value pairs.
+// Each element in persons is an array with two items:
+
+// The username (e.g., "Alex")
+// The user object (e.g., { email: 'alex@alex.com', skills: [...], age: 20, ... })
+
+// console.log(person)
+// console.log(users)
+let most= 0
+let skilluser=''
+
+for(const [name,details] of person){
+  if(details.skills.length>most){
+    most=details.skills.length
+    skilluser=name
+  }
+}
+
+console.log(skilluser+' with '+most+' skills.')
+
