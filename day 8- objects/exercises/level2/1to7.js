@@ -106,7 +106,25 @@ console.log('Users with points: '+userswithpoints50)
 
  q2()
 
+
+
+ const values= Object.values(users)
+ console.log(values)
+
  
 
+ //3.Find people who are MERN stack developer from the users object
 
+
+   const mernStackDevelopers =()=>{
+       let developer =[]
+       for(const user in users){
+        if(users[user].skills.includes('React' && 'Node' && 'Express' && 'MongoDB')){
+          developer.push(user)
+        }
+       }
+       console.log('people with MERN skill are:', developer.join(','))
+   }
+
+  mernStackDevelopers();
 
