@@ -74,3 +74,104 @@ const captials =(name)=>{
 }
 
 names.forEach(captials)
+
+
+//map
+//--->map: Iterate an array elements and modify the array elements. It takes a callback function with elements, index , array parameter and return a new array.
+
+const numbers2=[9,8,76,2,3]
+const usingMapFunction = numbers2.map((number)=>{
+    return number*2;
+})
+
+console.log(usingMapFunction)
+
+const names2=["kar","car","var","poiuy"]
+
+const changetocaptial=(name)=>{
+    return name.toUpperCase();
+}
+const mapFunction=names2.map(changetocaptial)
+
+console.log(mapFunction)
+
+
+// const changetosmall =(name1)=>{
+//     return name1.toLowerCase();
+// }
+
+// const mapFunction1=names2.map((name1)=>{
+//     return name1.toLowerCase();
+// });
+
+const mapFunction1 =names2.map((name1)=> name1.toLowerCase())
+console.log(mapFunction1);
+
+
+const countries =[
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya',
+]
+
+const mapFunction2 = countries.map((country)=>country.slice(1,3))
+ console.log(mapFunction2)
+
+
+ //-->fliter
+
+ //---Filter out items which full fill filtering conditions and return a new array.
+
+ const filterfunction = countries.filter((country)=>country.includes('land'))
+ console.log(filterfunction)
+
+    const numbers3 = [ 2,3,56,43,47,68,90]
+ const filterfunction1 = numbers3.filter((number)=>number%2 == 0)
+ console.log(filterfunction1)
+
+
+ const filterfunction2 = countries.filter((country)=>country.length>=8)
+
+
+ console.log(filterfunction2)
+
+ const scores = [
+    { name: 'Asabeneh', score: 95 },
+     { name: 'Lidiya', score: 98 },
+    { name: 'Mathias', score: 80 },
+    { name: 'Elias', score: 50 },
+    { name: 'Martha', score: 85 },
+    { name: 'John', score: 100 },
+  ]
+  
+
+const filterfunction3 = scores.filter((element)=>element.score>80)
+    .map((element)=>element.name)
+console.log(filterfunction3)
+
+
+//---reduce  ---> returns a single value.
+
+//Reduce takes a callback function. The call back function takes accumulator, current, and optional initial value as a parameter and returns a single value. It is a good practice to define an initial value for the accumulator value. If we do not specify this parameter, by default accumulator will get array first value. If our array is an empty array, then Javascript will throw an error.
+
+const numbers4 =[22,12,21,4233,23]
+
+const reducefunction = numbers4.reduce((acc,cur)=> acc+cur,0)
+
+console.log(reducefunction)
+
+//--every -->It returns boolean
+//It checks if all elements in the array pass the test implemented by the provided function.
+
+const everyfunction =countries.every((country)=> typeof country == 'string')
+
+console.log(everyfunction)
+

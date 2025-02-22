@@ -1,1 +1,1 @@
-numbers.forEach(num=>sum+=num)
+ typeof
