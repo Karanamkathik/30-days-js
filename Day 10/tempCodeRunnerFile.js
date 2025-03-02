@@ -93,35 +93,9 @@ for(const l of lanSet){
 }
 console.log(counts)
 
-//from above set and filter method we are able get language couny in a array.-->usefull while soving dsa in js
-
-//down below is union of sets
 let a = [1,3,5,7,9]
 let b=[2,4,6,8,0]
 
 let c =[...a,...b]
 console.log(c)
-
-const C = new Set(c)
-console.log(C)
-
-
-//Intersection os sets
-
-let first=[1,2,3,6,5,8]
-let second=[2,4,6,8,0]
-
-let A = new Set(first)
-let B = new Set(second)
-
-let all = [...first,...second]
-console.log(all)
-
-const allSet = new Set(all)
-console.log(allSet)
-
-let third = a.filter((num)=>B.has(num))
-let C1 = new Set(third)
-console.log(C)
-
 
