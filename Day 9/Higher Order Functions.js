@@ -175,3 +175,8 @@ const everyfunction =countries.every((country)=> typeof country == 'string')
 
 console.log(everyfunction)
 
+//---find --Return the first element which satisfies the condition
+
+//If no element satisfies the condition, it returns undefined.
+
+//--sorting object array
