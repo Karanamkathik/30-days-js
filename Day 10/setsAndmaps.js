@@ -124,4 +124,37 @@ let third = a.filter((num)=>B.has(num))
 let C1 = new Set(third)
 console.log(C)
 
+//-->Maps  --The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value
 
+const map = new Map()
+
+console.log(map)
+
+console.log(map.size)
+
+const countries = [["india","pak"],["aus","eng"]]
+
+const countriesMap = new Map(countries)
+
+console.log(countriesMap)
+
+countriesMap.set("sri","ban")
+console.log(countriesMap)
+
+
+console.log(countriesMap.get("india"))
+
+console.log(countriesMap.has("sri"))
+
+console.log(countriesMap.has("eng")) //so we can check with only with key but not with value
+
+for(const counrty of countriesMap){
+    console.log(counrty)
+}
+
+for(const [country,enimie] of countriesMap){
+    // console.log(country)
+    // console.log(enimie)
+
+    console.log(country,enimie)
+}
