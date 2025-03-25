@@ -33,3 +33,11 @@ console.log(`sum of ${a} and ${b} is ${a+b}`)
 for(let i = 0; i <= 5; i++){
     console.log(`${i} * ${i} = ${i * i}`)
   }
+
+
+
+  /*
+       js cookies 
+       local storage 
+       session storage
+  */

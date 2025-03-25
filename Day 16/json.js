@@ -67,3 +67,6 @@ const usersText = `{
    const userobjStringfy = JSON.stringify(userObj)
    console.log(userobjStringfy)
    
+
+   //in js .json()  returns a promise.
+   //https://chatgpt.com/c/67df9330-7770-800a-9b1a-eac75ca04ee4

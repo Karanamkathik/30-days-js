@@ -180,3 +180,11 @@ console.log(everyfunction)
 //If no element satisfies the condition, it returns undefined.
 
 //--sorting object array
+
+
+function greatings(){
+    return console.log('hello')
+}
+
+setTimeout(greatings,2000);
+//setTimeout(greatings,2000); // this is correct way to pass function as argument to. this settikeout and interval takes reffernce not call
